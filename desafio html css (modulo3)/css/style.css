@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/* font importada "kalam" */
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+/* font importada "amita" */
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+
+    /* variaveis de cores */
+    --preto: black;
+    --cinza_escuro: rgb(51, 50, 50);
+    --branco: white;
+    --lightblue: rgb(102, 190, 219);
+    --sombra: rgba(0, 0, 0, 0.178);
+
+    /* variaveis de fontes */
+    --font_padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --kalam: 'Kalam', cursive;
+    --amita: 'Amita', cursive;    
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font_padrao);
+    font-weight: normal;
+}
+
+/* configurações de ccs do header */
+
+header{
+    background-color: var(--preto);
+    color: var(--branco);
+    text-align: center;
+}
+
+header > h1{
+    font-family: var(--amita);
+    font-size: 4vw;
+    padding-top: 4.5vw;
+    font-variant: small-caps;
+}
+
+header > p{
+    padding-bottom: 4.5vw;
+    font-size: 1.6vw;
+}
+
+/* configurações de ccs do main */
+
+main section{
+    font-family: var(--kalam);
+    font-weight: bold;
+    font-size: 2.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+main section.sem_img{
+    background-color: var(--branco);
+    color: var(--preto);
+
+}
+
+main section.com_img{
+    background-color: var(--cinza_escuro);
+    color: var(--branco);
+}
+
+main section.com_img > p {
+    padding: 10px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.205);
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px var(--sombra);
+}
+
+/* configurações de ccs do footer */
+
+footer a, header a{
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: bolder;
+}footer a:hover, header a:hover{
+    color: var(--lightblue);
+    text-decoration: underline;
+    transition: .5s;
+}
+
+footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1em;
+}
+
+
